@@ -1,3 +1,11 @@
+# PDF Scanner AI ChatBot
+
+#### This is the chatbot which uses OpenAI API and LangChain for the implementation. This bot scans the PDF and answers the questions based on it.
+
+# Screenshots
+
+[![Chatbot Screenshot](/files/screenshot.png)]
+
 # First Time Setup
 
 ## Using Pipenv [Recommended]
@@ -160,3 +168,18 @@ Then:
 ```
 flask --app app.web init-db
 ```
+
+### create a .env file and provide following informations 
+
+<ol>
+    <li>SECRET_KEY=123</li>
+    <li>SQLALCHEMY_DATABASE_URI=sqlite:///sqlite.db</li>
+    <li>UPLOAD_URL=https://prod-upload-langchain.fly.dev</li>
+    <li>OPENAI_API_KEY</li>
+    <li>REDIS_URI</li>
+    <li>PINECONE_API_KEY</li>
+    <li>PINECONE_ENV_NAME</li>
+    <li>PINECONE_INDEX_NAME</li>
+    <li>LANGFUSE_PUBLIC_KEY</li>
+    <li>LANGFUSE_SECRET_KEY</li>
+</ol>
